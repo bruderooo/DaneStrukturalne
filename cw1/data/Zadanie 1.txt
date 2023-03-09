@@ -1,0 +1,25 @@
+Napisz program w wybranym jezyku programowania, ktory odczyta jeden z plikow (sparsuje go):
+- plik dane_l.txt (latwiejsza wersja),
+- plik dane_t.txt (trudniejsza wersja),
+
+i odczyta glowne dane z tego pliku zapisze je do tabeli:
+
+|---------------|---------------|--------|-----------|--------------|--------------|
+|  uniwersytet  |  id_studenta  |  imie  |  nazwisko |      wiek    |     oceny    |     
+|---------------|---------------|--------|-----------|--------------|--------------| 
+|     ...       |      ...      |   ...  |   ...     |              |              |
+
+itd.
+
+Uwaga! Dopuszczamy redundancje danych. Dane mogą być zapisane do pliku csv.
+
+Nastepnie program odpowie na pytania:
+
+- ile jest w sumie studentow?
+- jaka jest srednia liczba studentow w uniwersytetach?
+- jakie imie wystepuje najczesciej i jakie nazwiko najrzadziej?
+- jaki jest sredni wiek studentow?
+- jaka jest srednia ocen w kazdym z uniwersytetow z osobna?
+- jaka jest srednia ocen ogolnie?
+
+Wyniki zapisze do pliku wynik.txt.
