@@ -1,0 +1,289 @@
+Aby przetworzyc dokument XML w Javie nalezy go najpierw sprasowac czyli wczytac jego zawartosc,
+stwierdzic poprawnosc formatu dokladniej poprawnosc skladni, tj. czy dokument XML jest well-formed.
+
+Uzyjemy interfejsu DOM ktory umieszcza w pamieci elementy dokumentu XML jako drzewiasta strukture
+   (ta metoda raczej powinna byc stosowana do nieduzych plikow xml ze wzgledu na pamiec i czas)
+
+Klasy do obslugi interfejsu DOM sa ustandaryzowane i zawarte w pakietach: 
+
+
+								org.w3c.dom i org.xml.sax.
+
+
+Wiele firm np. Apache i IBM stworzylo wlasne parsery ktore implementuja te interfejsy.
+
+Rowniez Sun stworzyl JAXP (Java API for XML Processing) zawarty w pakiecie:
+
+
+								javax.xml.parsers
+
+
+ktory implementuje powyzsze interfesy oraz je rozszerza. Generalnie jest on wystarczajacy w obsludze
+plikow XML w Javie i bedziemy go stosowac.
+
+Skorzystamy tez z pakietu
+
+
+								java.xml.transorm
+
+
+wykorzystywanego miedzy innymi przy zapisie dokumentow XML do pliku oraz przy transformacjach szablonow XSL. 
+
+Omowimy tylko parsowanie plikow metoda DOM.
+
+
+Schemat czytania pliku xml metoda DOM w Javie:
+==============================================
+
+
+
+		Najwazniejsze pakiety ktore wykorzystamy tu to:      org.w3c.dom    i    javax.xml.parsers
+
+
+
+(a) Aby wczytac dokument XML potrzebny jest obiekt klasy DocumentBuilder ktory mozemy uzyskac z fabryki
+    DocumentBuilderFactory w nastepujacy sposob:
+
+
+					DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+					DocumentBuilder builder = factory.newDocumentBuilder();
+
+
+tj. najpierw uzyskujemy fabryke DocumentBuilderFactory, a nastepnie z fabryki tej uzyskujemy egzemplarz DocumentBuildera.
+
+(b) Wczytujemy teraz dokument XML jednoczesnie go parsujac:
+
+(i) z lokalnego pliku
+
+
+						File f = new File("plik.xml");
+						Document doc = builder.parse(f);
+
+(ii) lub z adresu URL
+
+
+			URL = new URL("....");
+			Document doc = builder.parse(u);
+
+
+(iii) lub ze strumienia wejsciowego
+
+
+			InputStream in = new InputStream(....);
+			Document doc = builder.parse(in);
+
+
+Pamietajmy o wyjatkach i ich obsludze!!! Moga byc trzy:
+
+
+				ParserConfigurationException - jesli parser nie obsluguje zadanych wlasciwosci
+				SAXParserException - jesli jest blad typu well-formed lub valid
+				IOException - blad czytania pliku xml lub dtd czy xsd jesli istnieja
+
+
+Sciagnijmy teraz na lokalny dysk plik dane.xml i pliki dane.dtd (DTD tego pliku).
+
+(a) Reprezentacja pliku dane.xml w pamieci w zgodzie z interfejsem DOM ma postac nastepujacego drzewa z wezlami:
+
+
+							
+								Element 
+							         dane
+								  |
+		----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		|           |              |              |             |              |           	            |          |                      |          |                         |
+	      Text        Element        Text          Element         Text          Element-----------  	   Text    Element -------------     Text      Comment                    Text
+	      null         imie          null          nazwisko        null          zarobki  |        |  	   null     zarobki   |        |     null      "zestawienie zarobkow"     null
+                            |                             |                           |       |        |   	               |      |        |
+                          Text                         Text                         Text     Attr      Attr                  Text    Attr      Attr 
+                          Pawel                        Kowalski                     3423     wartosc:  waluta:	             2198    wartosc:  waluta:
+											     brutto    zl                            netto     zl
+
+
+Kazdy z wezlow tego drzewa ma wskazany powyzej typ ale wszystkie one dziedzicza po interfejsie Node:
+
+
+
+									Node
+						       			  |
+					  		   |-------|---------|-------|		
+				         		   Attr   Element   Text    Comment  
+
+
+
+
+
+(b) Do chodzenia po drzewie mamy metody:
+
+
+        	getFirstChild()    getLastChild()    getPreviousSybiling()   getNextSibiling()  getParent() zwracajace typ Node
+
+
+oraz
+
+                getChildNodes() zwraca liste NodeList wszystkich dzieci danego wezla, kazdy element listy to Node,
+				przegladac mozemy ja petla for
+
+
+(c) Do czytania nazwy i wartosci wezlow wykorzystujemy metody:
+
+
+							getNodeName() i getNodeValue()
+
+Przy czym te metody odpowiednio zwroca:
+
+
+       		dla wezlow typu Element:        aktualna nazwa wezla           i                null
+       		dla wezlow typu Text:                  #text                   i         zawartosc pola tekstowego
+       		dla wezlow typu Comment:               #comment                i         zawartosc komentarza
+       		dla wezlow typu Atrr              nazwe atrybutu               i          wartosc atrybutu
+
+
+(d) Kazdy wezel ma typ Node. Pamietajmy jednak, ze czasami warto odzyskac prawdziwy typ danego wezla, tj. Element, Text, Attr, Comment itd.
+
+Robimy to dokonujac rzutowania wezla typu Node na prawdziwy typ danego wezla, czesto sprawdzajac wczesniej poleceniem instanceof czy tak rzeczywiscie jest
+						
+
+
+						Node root = doc.getDocumentElement();
+
+						if (root instanceof Element)
+
+						 Element root1 = (Element)root;
+
+
+lub deklarujac od razu jego prawdziwy typ:
+
+
+						Element root1 = doc.getDocumentElement();
+
+
+
+Jesli dotrzemy do prawdziwego typu danego wezla to mamy dostep do wiekszej ilosci metod operacji na nim, np. dla typu Element mamy wiecej metod dostepu
+
+do atrybutow, metoda gedTagName() dostajemy nazwe elementu, jesli wezel jest typu Text badz Comment to metoda getData() dostajemy tekst zawarty w wezle itd. 
+
+
+(e) Atrybuty czytamy metoda getAttributes() ktora zwraca obiekt typu NamedNodeMap ktory to zawiera obiekty typu Node. Wezly kolekcji NamedNodeMap
+
+przegladamy w ten sam sposob co wezly kolekcji NodeList (petla for). Metody getNodeName() i getNodeValue() zwracaja odpowiednio nazwe i wartosc atrybutu.
+
+
+(f) metoda getElementsByTagName("nazwa") wywolywana na elemencie "nazwa" pozwala wybrac wszytkich jego potomkow; sa oni zapamietani w obiekcie NodeList
+
+
+(g) walidacje (zgodnosc z DTD) wlaczamy ustawiajac wczesniej:
+
+
+								factory.setValidating(true);
+
+
+(h) biale spacje ignorujemy ustawiajac wczesniej:
+
+
+           					factory.setIgnoringElementContentWhitespace(true);
+
+
+Uwaga!! Tak naprawde zeby zadzialalo to musimy wczesniej wlaczyc walidacje 
+
+
+Tworzenie i zapisywanie wlasnego dokumentu XML korzystajac z DOM i Transformat:
+===============================================================================
+
+(a) Budujemy najpierw element typu Document: (teraz na DocumentBuilder uzywamy metody newDocument() nie parse())
+
+
+   				 DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+   				 DocumentBuilder builder = factory.newDocumentBuilder();
+    			 Document doc = builder.newDocument();
+
+
+(b) Tworzmy kolejne skladowe dokumentu XML:
+
+    wezly typu Element tworzymy wywolujac doc.createElement("nazwa");
+    np.
+
+
+        				 Element root = doc.createElement("sprawozdanie");
+
+
+    wezly typu Text tworzymy wywolujac doc.createTextNode("tekst");
+    wezly typu Comment tworzymy wywolujac doc.createComment("komentarz");
+    wezly typu Attr tworzymy wywolujac doc.createAttribute("atrybut"); i nadajac mu wartosc metoda setValue();
+
+(c) Podlaczamy je teraz kolejno (wedlug zamierzonego wczesniej drzewa XML) metoda appendChild(),
+
+    tj. root przylaczamy do doc nastepujaco:
+
+
+          						doc.appendChild(root);  
+
+    itd.
+    
+    Atrybuty do danego elementu podlaczamy metoda:	
+
+
+							setAttributeNode(); 
+
+
+(d) Tworzymy obiekt f typu File skojarzony z plikiem powiedzmy plik.xml i go fizycznie tworzymy pamietajac o mozliwosci sprawdzenia
+    czy plik wczesniej istnial (informacja w zmiennej war):
+    
+
+    							File f = new File("sprawozdanie.xml");
+    						
+
+
+(e) wykorzystujemy w koncu przeksztalcenie tozasamosciowe (transformacje tozsamosciowa XSLT) do zapisu trzymanego przez nas drzewa dokumentu XML w zmiennej doc
+    w pamieci do pliku nowy.xml:
+
+
+    				Transformer transformer = TransformerFactory.newInstance().newTransformer();
+    				transformer.transform(new DOMSource(doc), new StreamResult("sprawozdanie.xml"));
+    
+
+    lub jesli chcemy podmieniajac ostatnia linie na:
+
+
+    				transformer.transform(new DOMSource(doc), new StreamResult(System.out));
+
+
+    na standardowe urzadzenie wyjscia czyli konsole.
+
+(f) wywolujac:, np.
+
+
+              					transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+
+
+    dostajemy wciecia w pliku wynikowym xml. Regulujac odpowiednio stala OutputKey mozna dostac inne efekty pliku wynikowego.
+
+
+Zadanie 2
+=========
+
+Odczytac plik dl.xml zawierajacy wszystkie losowania Duzego Lotka z okresu 1957 rok - 2017 rok.
+
+Zrobic statystyke przedstwiajaca ktora liczba ile razy zostala wylosowana:
+
+1 - ile razy
+2 - ile razy 
+...
+49 - ile razy
+
+Znalezc rowniez liczbe najczesciej wystepujaca w losowaniach i najrzadzej.
+
+Wynik zapisac w pliku wynik_dl.xml o strukturze:
+
+<root>
+  <czestotliwosc>
+      <liczba1>...</liczba1>
+	  <liczba2>...</liczba2>
+	           ...
+	  <liczba49>...</liczba49> 
+  </czestotliwosc>
+  <najczesciej>...</najczesciej>	
+  <najrzadziej>...</najrzadziej>	
+</root>
+
+Dorobic zgodne dtd do pliku wynik_dl.xml.

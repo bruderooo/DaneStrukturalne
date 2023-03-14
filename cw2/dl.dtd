@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!ELEMENT root (data)*>
+
+<!ELEMENT data (losowanie,numer,numer,numer,numer,numer,numer)>
+<!ATTLIST data dzien CDATA #IMPLIED miesiac CDATA #IMPLIED rok CDATA #IMPLIED>
+
+<!ELEMENT losowanie (#PCDATA)>
+
+<!ELEMENT numer (#PCDATA)>
