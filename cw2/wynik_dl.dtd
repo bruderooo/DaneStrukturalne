@@ -3,5 +3,6 @@
 <!ELEMENT root (czestotliwosc, najczesciej, najrzadziej)>
 <!ELEMENT czestotliwosc (liczba)+>
 <!ELEMENT liczba (#PCDATA)>
+<!ATTLIST liczba wartosc CDATA #REQUIRED>
 <!ELEMENT najczesciej (#PCDATA)>
 <!ELEMENT najrzadziej (#PCDATA)>

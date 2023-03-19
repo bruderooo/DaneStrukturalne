@@ -9,9 +9,10 @@ def dict2xml(dict_data: dict):
         if isinstance(data, dict):
             out = ""
             for key, val in data.items():
-                prefix = "liczba" if isinstance(key, int) else ""
-                sufix =
-                out += f'<{prefix}{key}>{elem(val)}</{prefix}{key}>'
+                if isinstance(key, int):
+                    out += f'<liczba wartosc="{key}">{elem(val)}</liczba>'
+                else:
+                    out += f'<{key}>{elem(val)}</{key}>'
             return out
         return data
 

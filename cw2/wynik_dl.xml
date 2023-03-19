@@ -1,57 +1,57 @@
-<?xml version='1.0' ?>
-<!DOCTYPE root SYSTEM 'wynik_dl.dtd'>
+<?xml version="1.0" ?>
+<!DOCTYPE root SYSTEM "wynik_dl.dtd">
 
 <root>
 	<czestotliwosc>
-		<liczba var>743</liczba>
-		<liczba43>745</liczba43>
-		<liczba49>769</liczba49>
-		<liczba12>770</liczba12>
-		<liczba7>774</liczba7>
-		<liczba47>780</liczba47>
-		<liczba10>787</liczba10>
-		<liczba44>787</liczba44>
-		<liczba23>794</liczba23>
-		<liczba3>794</liczba3>
-		<liczba30>795</liczba30>
-		<liczba39>796</liczba39>
-		<liczba5>796</liczba5>
-		<liczba14>797</liczba14>
-		<liczba46>797</liczba46>
-		<liczba9>797</liczba9>
-		<liczba16>802</liczba16>
-		<liczba35>806</liczba35>
-		<liczba33>807</liczba33>
-		<liczba37>809</liczba37>
-		<liczba8>810</liczba8>
-		<liczba26>810</liczba26>
-		<liczba2>810</liczba2>
-		<liczba11>811</liczba11>
-		<liczba19>812</liczba19>
-		<liczba1>812</liczba1>
-		<liczba15>814</liczba15>
-		<liczba42>815</liczba42>
-		<liczba41>816</liczba41>
-		<liczba36>817</liczba36>
-		<liczba45>823</liczba45>
-		<liczba40>823</liczba40>
-		<liczba32>823</liczba32>
-		<liczba31>825</liczba31>
-		<liczba22>825</liczba22>
-		<liczba20>827</liczba20>
-		<liczba13>828</liczba13>
-		<liczba25>832</liczba25>
-		<liczba28>835</liczba28>
-		<liczba38>838</liczba38>
-		<liczba18>841</liczba18>
-		<liczba27>842</liczba27>
-		<liczba4>845</liczba4>
-		<liczba24>848</liczba24>
-		<liczba6>848</liczba6>
-		<liczba29>856</liczba29>
-		<liczba21>857</liczba21>
-		<liczba34>869</liczba34>
-		<liczba17>871</liczba17>
+		<liczba wartosc="48">743</liczba>
+		<liczba wartosc="43">745</liczba>
+		<liczba wartosc="49">769</liczba>
+		<liczba wartosc="12">770</liczba>
+		<liczba wartosc="7">774</liczba>
+		<liczba wartosc="47">780</liczba>
+		<liczba wartosc="10">787</liczba>
+		<liczba wartosc="44">787</liczba>
+		<liczba wartosc="23">794</liczba>
+		<liczba wartosc="3">794</liczba>
+		<liczba wartosc="30">795</liczba>
+		<liczba wartosc="39">796</liczba>
+		<liczba wartosc="5">796</liczba>
+		<liczba wartosc="14">797</liczba>
+		<liczba wartosc="46">797</liczba>
+		<liczba wartosc="9">797</liczba>
+		<liczba wartosc="16">802</liczba>
+		<liczba wartosc="35">806</liczba>
+		<liczba wartosc="33">807</liczba>
+		<liczba wartosc="37">809</liczba>
+		<liczba wartosc="8">810</liczba>
+		<liczba wartosc="26">810</liczba>
+		<liczba wartosc="2">810</liczba>
+		<liczba wartosc="11">811</liczba>
+		<liczba wartosc="19">812</liczba>
+		<liczba wartosc="1">812</liczba>
+		<liczba wartosc="15">814</liczba>
+		<liczba wartosc="42">815</liczba>
+		<liczba wartosc="41">816</liczba>
+		<liczba wartosc="36">817</liczba>
+		<liczba wartosc="45">823</liczba>
+		<liczba wartosc="40">823</liczba>
+		<liczba wartosc="32">823</liczba>
+		<liczba wartosc="31">825</liczba>
+		<liczba wartosc="22">825</liczba>
+		<liczba wartosc="20">827</liczba>
+		<liczba wartosc="13">828</liczba>
+		<liczba wartosc="25">832</liczba>
+		<liczba wartosc="28">835</liczba>
+		<liczba wartosc="38">838</liczba>
+		<liczba wartosc="18">841</liczba>
+		<liczba wartosc="27">842</liczba>
+		<liczba wartosc="4">845</liczba>
+		<liczba wartosc="24">848</liczba>
+		<liczba wartosc="6">848</liczba>
+		<liczba wartosc="29">856</liczba>
+		<liczba wartosc="21">857</liczba>
+		<liczba wartosc="34">869</liczba>
+		<liczba wartosc="17">871</liczba>
 	</czestotliwosc>
 	<najczesciej>17</najczesciej>
 	<najrzadziej>48</najrzadziej>
