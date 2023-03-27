@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "najczesciej": {
+            "type": "number"
+        },
+        "najrzadziej": {
+            "type": "number"
+        },
+        "czestotliwosc": {
+            "type": "object",
+            "patternProperties": {
+                "^[0-9]+$": {
+                    "type": "number"
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "required": ["czestotliwosc", "najczesciej", "najrzadziej"],
+    "additionalProperties": false
+}
