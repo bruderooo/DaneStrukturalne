@@ -23,10 +23,12 @@ def compute_output(data: Dict):
 
 def compute_for_json():
     loaded = json.loads(Path("dl.json").read_text())
-    json_schema = json.loads(Path("schema.json").read_text())
+    loaded_schema = json.loads(Path("dl_schema.json").read_text())
+    jsonschema.validate(instance=loaded, schema=loaded_schema)
 
     out = compute_output(loaded)
 
+    json_schema = json.loads(Path("schema.json").read_text())
     jsonschema.validate(instance=out, schema=json_schema)
     Path("wynik_dl.json").write_text(json.dumps(out, indent=4))
 
