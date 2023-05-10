@@ -1,7 +1,6 @@
-import xml.etree.ElementTree as et
 from collections import Counter
 from pathlib import Path
-import xml.dom.minidom
+from lxml import etree
 
 
 def dict2xml(dict_data: dict):
@@ -16,12 +15,13 @@ def dict2xml(dict_data: dict):
             return out
         return data
 
-    return f'<?xml version="1.0"?> <root>{elem(dict_data)}</root>'
+    return f'<?xml version="1.0"?><!DOCTYPE root SYSTEM "wynik_dl.dtd"><root>{elem(dict_data)}</root>'
 
 
 if __name__ == '__main__':
     filepath = Path(__file__).parent.joinpath("dl.xml")
-    tree = et.parse(filepath)
+    parser = etree.XMLParser(dtd_validation=True)
+    tree = etree.parse(filepath, parser=parser)
 
     all_nums = (int(elem.text) for elem in tree.iter("numer"))
     sorted_freq = sorted(Counter(all_nums).items(), key=lambda x: x[1])
@@ -34,8 +34,8 @@ if __name__ == '__main__':
     }
 
     xml_converted = dict2xml(out)
-    dom = xml.dom.minidom.parseString(xml_converted)
-    pretty_xml_as_string = dom.toprettyxml()
+    dom = etree.fromstring(xml_converted, parser=parser)
+    pretty_xml_as_string = etree.tostring(dom, pretty_print=True, encoding="unicode")
 
     with open("wynik_dl.xml", "w") as f:
         f.write(pretty_xml_as_string)
