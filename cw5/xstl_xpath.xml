@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dane>
+	<osoba>
+		<imie>Dora Church</imie>
+		<data>11/19/2018</data>
+		<wiek>58</wiek>
+		<waga>81</waga>
+		<wzrost>150</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Sacha Blevins</imie>
+		<data>09/15/2015</data>
+		<wiek>45</wiek>
+		<waga>59</waga>
+		<wzrost>176</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Martena Galloway</imie>
+		<data>07/30/2016</data>
+		<wiek>32</wiek>
+		<waga>80</waga>
+		<wzrost>178</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Reese Stuart</imie>
+		<data>12/07/2018</data>
+		<wiek>67</wiek>
+		<waga>45</waga>
+		<wzrost>146</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Lucy Harris</imie>
+		<data>03/12/2019</data>
+		<wiek>26</wiek>
+		<waga>80</waga>
+		<wzrost>166</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Buckminster Atkins</imie>
+		<data>10/13/2016</data>
+		<wiek>31</wiek>
+		<waga>68</waga>
+		<wzrost>154</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Marny Roach</imie>
+		<data>02/03/2018</data>
+		<wiek>75</wiek>
+		<waga>65</waga>
+		<wzrost>168</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Lee Patton</imie>
+		<data>07/12/2015</data>
+		<wiek>46</wiek>
+		<waga>93</waga>
+		<wzrost>180</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Rana Charles</imie>
+		<data>02/10/2018</data>
+		<wiek>51</wiek>
+		<waga>59</waga>
+		<wzrost>163</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Jasper David</imie>
+		<data>02/13/2017</data>
+		<wiek>31</wiek>
+		<waga>93</waga>
+		<wzrost>172</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Ashely Grant</imie>
+		<data>12/12/2016</data>
+		<wiek>32</wiek>
+		<waga>65</waga>
+		<wzrost>182</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Micah Mendoza</imie>
+		<data>12/25/2015</data>
+		<wiek>49</wiek>
+		<waga>95</waga>
+		<wzrost>168</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Keaton Bradford</imie>
+		<data>07/31/2018</data>
+		<wiek>72</wiek>
+		<waga>66</waga>
+		<wzrost>155</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Jillian Guy</imie>
+		<data>05/08/2018</data>
+		<wiek>58</wiek>
+		<waga>69</waga>
+		<wzrost>183</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Heather Obrien</imie>
+		<data>12/30/2018</data>
+		<wiek>53</wiek>
+		<waga>48</waga>
+		<wzrost>181</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Maxine Charles</imie>
+		<data>09/20/2017</data>
+		<wiek>37</wiek>
+		<waga>60</waga>
+		<wzrost>161</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Yoko Short</imie>
+		<data>09/08/2017</data>
+		<wiek>41</wiek>
+		<waga>64</waga>
+		<wzrost>148</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Quyn Black</imie>
+		<data>01/30/2018</data>
+		<wiek>57</wiek>
+		<waga>94</waga>
+		<wzrost>177</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Jenette Lynn</imie>
+		<data>06/24/2015</data>
+		<wiek>57</wiek>
+		<waga>69</waga>
+		<wzrost>177</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Jolene Allison</imie>
+		<data>09/03/2016</data>
+		<wiek>33</wiek>
+		<waga>92</waga>
+		<wzrost>184</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Katelyn Spence</imie>
+		<data>03/18/2017</data>
+		<wiek>48</wiek>
+		<waga>79</waga>
+		<wzrost>159</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Ezekiel Casey</imie>
+		<data>08/12/2017</data>
+		<wiek>32</wiek>
+		<waga>92</waga>
+		<wzrost>159</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Jamalia Ball</imie>
+		<data>09/25/2016</data>
+		<wiek>59</wiek>
+		<waga>57</waga>
+		<wzrost>183</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Lillian Campos</imie>
+		<data>10/22/2015</data>
+		<wiek>28</wiek>
+		<waga>58</waga>
+		<wzrost>171</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Sara Parrish</imie>
+		<data>01/15/2016</data>
+		<wiek>31</wiek>
+		<waga>81</waga>
+		<wzrost>185</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Brent Nunez</imie>
+		<data>05/23/2015</data>
+		<wiek>40</wiek>
+		<waga>62</waga>
+		<wzrost>182</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Lois Browning</imie>
+		<data>05/02/2016</data>
+		<wiek>59</wiek>
+		<waga>78</waga>
+		<wzrost>162</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Ria Pearson</imie>
+		<data>08/23/2015</data>
+		<wiek>69</wiek>
+		<waga>93</waga>
+		<wzrost>184</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Grace Lawrence</imie>
+		<data>05/17/2016</data>
+		<wiek>59</wiek>
+		<waga>94</waga>
+		<wzrost>171</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Jeanette Waters</imie>
+		<data>06/28/2018</data>
+		<wiek>38</wiek>
+		<waga>95</waga>
+		<wzrost>169</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Nina Baxter</imie>
+		<data>09/16/2015</data>
+		<wiek>52</wiek>
+		<waga>77</waga>
+		<wzrost>147</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Christian Gray</imie>
+		<data>02/17/2018</data>
+		<wiek>60</wiek>
+		<waga>85</waga>
+		<wzrost>148</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Riley Stone</imie>
+		<data>11/17/2015</data>
+		<wiek>62</wiek>
+		<waga>55</waga>
+		<wzrost>164</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Matthew Sanders</imie>
+		<data>09/15/2018</data>
+		<wiek>51</wiek>
+		<waga>76</waga>
+		<wzrost>153</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Cassady Sanchez</imie>
+		<data>06/30/2016</data>
+		<wiek>42</wiek>
+		<waga>95</waga>
+		<wzrost>169</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Keiko Riley</imie>
+		<data>01/07/2018</data>
+		<wiek>33</wiek>
+		<waga>59</waga>
+		<wzrost>187</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Quinlan Cooper</imie>
+		<data>12/30/2016</data>
+		<wiek>62</wiek>
+		<waga>95</waga>
+		<wzrost>153</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Lyle Le</imie>
+		<data>12/21/2017</data>
+		<wiek>69</wiek>
+		<waga>59</waga>
+		<wzrost>186</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Mary Chase</imie>
+		<data>11/24/2016</data>
+		<wiek>55</wiek>
+		<waga>46</waga>
+		<wzrost>177</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Ebony Maynard</imie>
+		<data>06/20/2018</data>
+		<wiek>31</wiek>
+		<waga>95</waga>
+		<wzrost>189</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Amena Heath</imie>
+		<data>11/22/2015</data>
+		<wiek>48</wiek>
+		<waga>90</waga>
+		<wzrost>173</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Lacota Barlow</imie>
+		<data>03/08/2019</data>
+		<wiek>38</wiek>
+		<waga>87</waga>
+		<wzrost>180</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Miranda Ballard</imie>
+		<data>09/06/2018</data>
+		<wiek>68</wiek>
+		<waga>87</waga>
+		<wzrost>173</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Dante Puckett</imie>
+		<data>02/23/2019</data>
+		<wiek>27</wiek>
+		<waga>85</waga>
+		<wzrost>183</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Ezekiel Padilla</imie>
+		<data>10/07/2015</data>
+		<wiek>39</wiek>
+		<waga>45</waga>
+		<wzrost>178</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Ivor Workman</imie>
+		<data>09/24/2018</data>
+		<wiek>44</wiek>
+		<waga>77</waga>
+		<wzrost>185</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Selma Dickerson</imie>
+		<data>04/07/2018</data>
+		<wiek>70</wiek>
+		<waga>58</waga>
+		<wzrost>189</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Anika Rivers</imie>
+		<data>03/25/2016</data>
+		<wiek>57</wiek>
+		<waga>50</waga>
+		<wzrost>182</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Roanna Cannon</imie>
+		<data>10/28/2016</data>
+		<wiek>39</wiek>
+		<waga>87</waga>
+		<wzrost>167</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Jacob West</imie>
+		<data>01/26/2016</data>
+		<wiek>62</wiek>
+		<waga>63</waga>
+		<wzrost>159</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Baxter Black</imie>
+		<data>02/14/2016</data>
+		<wiek>48</wiek>
+		<waga>66</waga>
+		<wzrost>159</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Gareth Pollard</imie>
+		<data>04/24/2018</data>
+		<wiek>51</wiek>
+		<waga>74</waga>
+		<wzrost>173</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Victoria Waller</imie>
+		<data>08/02/2017</data>
+		<wiek>36</wiek>
+		<waga>51</waga>
+		<wzrost>171</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Hu Cummings</imie>
+		<data>03/27/2018</data>
+		<wiek>55</wiek>
+		<waga>58</waga>
+		<wzrost>188</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Uriah Santana</imie>
+		<data>01/28/2019</data>
+		<wiek>60</wiek>
+		<waga>75</waga>
+		<wzrost>156</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Ariana Floyd</imie>
+		<data>05/31/2016</data>
+		<wiek>38</wiek>
+		<waga>74</waga>
+		<wzrost>185</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Jeremy Richardson</imie>
+		<data>04/11/2016</data>
+		<wiek>30</wiek>
+		<waga>54</waga>
+		<wzrost>160</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Daquan Osborn</imie>
+		<data>11/17/2015</data>
+		<wiek>34</wiek>
+		<waga>91</waga>
+		<wzrost>158</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Donovan Marshall</imie>
+		<data>05/26/2018</data>
+		<wiek>39</wiek>
+		<waga>77</waga>
+		<wzrost>171</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Vladimir Fisher</imie>
+		<data>10/21/2018</data>
+		<wiek>34</wiek>
+		<waga>93</waga>
+		<wzrost>173</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Oprah Aguirre</imie>
+		<data>07/26/2016</data>
+		<wiek>36</wiek>
+		<waga>54</waga>
+		<wzrost>178</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Edward Gardner</imie>
+		<data>10/31/2016</data>
+		<wiek>70</wiek>
+		<waga>45</waga>
+		<wzrost>182</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Maris Blackburn</imie>
+		<data>10/03/2018</data>
+		<wiek>69</wiek>
+		<waga>50</waga>
+		<wzrost>172</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Demetrius Jones</imie>
+		<data>05/24/2015</data>
+		<wiek>29</wiek>
+		<waga>67</waga>
+		<wzrost>175</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Gareth Moody</imie>
+		<data>05/13/2015</data>
+		<wiek>66</wiek>
+		<waga>53</waga>
+		<wzrost>165</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Mary Bruce</imie>
+		<data>09/10/2015</data>
+		<wiek>56</wiek>
+		<waga>66</waga>
+		<wzrost>178</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Martha Baird</imie>
+		<data>10/12/2016</data>
+		<wiek>64</wiek>
+		<waga>46</waga>
+		<wzrost>168</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Ivana Ortega</imie>
+		<data>12/04/2016</data>
+		<wiek>36</wiek>
+		<waga>80</waga>
+		<wzrost>180</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Felix Byrd</imie>
+		<data>05/23/2016</data>
+		<wiek>37</wiek>
+		<waga>84</waga>
+		<wzrost>185</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Hoyt Cox</imie>
+		<data>12/26/2018</data>
+		<wiek>71</wiek>
+		<waga>71</waga>
+		<wzrost>154</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Shad Winters</imie>
+		<data>02/27/2019</data>
+		<wiek>52</wiek>
+		<waga>70</waga>
+		<wzrost>184</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Keelie Burns</imie>
+		<data>06/08/2018</data>
+		<wiek>71</wiek>
+		<waga>54</waga>
+		<wzrost>161</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Deborah Mathews</imie>
+		<data>03/23/2017</data>
+		<wiek>55</wiek>
+		<waga>64</waga>
+		<wzrost>179</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Zena Holloway</imie>
+		<data>05/22/2016</data>
+		<wiek>27</wiek>
+		<waga>77</waga>
+		<wzrost>189</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Salvador Morrow</imie>
+		<data>07/05/2018</data>
+		<wiek>25</wiek>
+		<waga>58</waga>
+		<wzrost>187</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Jerry Weaver</imie>
+		<data>01/06/2019</data>
+		<wiek>28</wiek>
+		<waga>54</waga>
+		<wzrost>179</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Hasad Matthews</imie>
+		<data>11/23/2016</data>
+		<wiek>74</wiek>
+		<waga>56</waga>
+		<wzrost>172</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Edward Ware</imie>
+		<data>06/26/2017</data>
+		<wiek>41</wiek>
+		<waga>86</waga>
+		<wzrost>162</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Amethyst Cohen</imie>
+		<data>05/28/2017</data>
+		<wiek>63</wiek>
+		<waga>71</waga>
+		<wzrost>169</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Hedwig Grimes</imie>
+		<data>10/14/2017</data>
+		<wiek>57</wiek>
+		<waga>76</waga>
+		<wzrost>153</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>David Adkins</imie>
+		<data>07/15/2015</data>
+		<wiek>44</wiek>
+		<waga>54</waga>
+		<wzrost>185</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Finn May</imie>
+		<data>02/24/2019</data>
+		<wiek>55</wiek>
+		<waga>62</waga>
+		<wzrost>157</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Roary Ingram</imie>
+		<data>02/11/2019</data>
+		<wiek>32</wiek>
+		<waga>86</waga>
+		<wzrost>146</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Imogene Nunez</imie>
+		<data>12/27/2015</data>
+		<wiek>43</wiek>
+		<waga>67</waga>
+		<wzrost>150</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Bell Cruz</imie>
+		<data>08/31/2015</data>
+		<wiek>65</wiek>
+		<waga>67</waga>
+		<wzrost>173</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Veronica Kerr</imie>
+		<data>07/18/2018</data>
+		<wiek>70</wiek>
+		<waga>90</waga>
+		<wzrost>153</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Steel Fernandez</imie>
+		<data>06/05/2018</data>
+		<wiek>65</wiek>
+		<waga>45</waga>
+		<wzrost>156</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Iona Walls</imie>
+		<data>08/24/2017</data>
+		<wiek>42</wiek>
+		<waga>61</waga>
+		<wzrost>160</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Nathaniel Moore</imie>
+		<data>02/14/2019</data>
+		<wiek>35</wiek>
+		<waga>84</waga>
+		<wzrost>171</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Peter Sandoval</imie>
+		<data>11/29/2018</data>
+		<wiek>44</wiek>
+		<waga>66</waga>
+		<wzrost>148</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Ian Hunt</imie>
+		<data>02/09/2017</data>
+		<wiek>55</wiek>
+		<waga>61</waga>
+		<wzrost>160</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Lucian Roy</imie>
+		<data>07/18/2016</data>
+		<wiek>42</wiek>
+		<waga>76</waga>
+		<wzrost>174</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Stacy Day</imie>
+		<data>09/20/2018</data>
+		<wiek>58</wiek>
+		<waga>92</waga>
+		<wzrost>179</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Lamar Mckinney</imie>
+		<data>04/09/2015</data>
+		<wiek>72</wiek>
+		<waga>71</waga>
+		<wzrost>160</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Lars Harrington</imie>
+		<data>07/09/2015</data>
+		<wiek>46</wiek>
+		<waga>67</waga>
+		<wzrost>154</wzrost>
+		<krew>AB</krew>
+	</osoba>
+	<osoba>
+		<imie>Brendan Bradley</imie>
+		<data>10/03/2018</data>
+		<wiek>59</wiek>
+		<waga>67</waga>
+		<wzrost>149</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Jenette Dickerson</imie>
+		<data>05/01/2016</data>
+		<wiek>75</wiek>
+		<waga>54</waga>
+		<wzrost>165</wzrost>
+		<krew>B</krew>
+	</osoba>
+	<osoba>
+		<imie>Harrison Vazquez</imie>
+		<data>08/29/2017</data>
+		<wiek>25</wiek>
+		<waga>76</waga>
+		<wzrost>150</wzrost>
+		<krew>A</krew>
+	</osoba>
+	<osoba>
+		<imie>Rahim Noble</imie>
+		<data>09/07/2015</data>
+		<wiek>40</wiek>
+		<waga>72</waga>
+		<wzrost>185</wzrost>
+		<krew>0</krew>
+	</osoba>
+	<osoba>
+		<imie>Jerry Patterson</imie>
+		<data>09/04/2017</data>
+		<wiek>75</wiek>
+		<waga>88</waga>
+		<wzrost>164</wzrost>
+		<krew>0</krew>
+	</osoba>
+</dane>
