@@ -5,6 +5,7 @@
         <html>
             <head>
                 <h1>Same dane wczytane</h1>
+                <link rel="stylesheet" type="text/css" href="styles.css"/>
             </head>
             <body>
                 <table border="1">
