@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<!--   b) wyswietli dane odczytane z pliku xml posortowane rosnaco-->
-<!--     wzgledem pola wiek, a pozniej malejaco wzgledem pola waga.-->
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
         <html>
             <head>
-                <title>Table</title>
+                <title>Sort</title>
             </head>
             <body>
-                <h1>Table</h1>
                 <table border="1">
                     <tr>
                         <th>Imie</th>

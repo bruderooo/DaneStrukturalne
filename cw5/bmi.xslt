@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<!--   a) wyswietli odczytane dane z pliku xml o kolejnych naglowkach:-->
-<!--     imie, data, wiek, waga, wzrost, krew z dodatkową informacją o współczynniku BMI-->
-<!--      każdej z osób -->
-
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
         <html>
             <head>
-                <h1>Table</h1>
+                <h1>BMI</h1>
             </head>
             <body>
                 <table border="1">

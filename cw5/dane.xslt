@@ -4,10 +4,9 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title>Table</title>
+                <h1>Same dane wczytane</h1>
             </head>
             <body>
-                <h1>Table</h1>
                 <table border="1">
                     <tr>
                         <th>Imie</th>
